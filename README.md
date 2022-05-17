@@ -1,0 +1,3 @@
+# sober
+Alcohol consumption tracker
+
