@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/progress"
+        android:icon="@drawable/ic_progress"
+        android:title="@string/progress"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/pledges"
+        android:icon="@drawable/ic_pledges"
+        android:title="@string/pledges"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/community"
+        android:icon="@drawable/ic_community"
+        android:title="@string/community"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/profile"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_person_pin"
+        />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_icon" >&#xf007;</string>
+    <string name="email_icon" >&#xe10c;</string>
+    <string name="password_icon" >&#xe10c;</string>
+</resources>

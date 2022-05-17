@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/sober_background"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="26dp"
+            android:hint="@string/email"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_size"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/button_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="26dp"
+            android:hint="@string/password"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_size"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/button_text"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:textSize="@dimen/button_text"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="26dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        <com.example.sober.textFonts
+            android:id="@+id/noAccountRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_in"
+            app:typeface="Montserrat-SemiBold.ttf"
+            android:textSize="@dimen/button_text"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin ="26dp"
+            android:textColor="@color/purple_500"
+            android:focusable="true" />
+
+        <com.example.sober.textFonts
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            app:typeface="Montserrat-SemiBold.ttf"
+            android:textSize="@dimen/button_text"
+            android:gravity="center"
+            android:textColor="@color/light_black"
+            />
+
+        <com.example.sober.textFonts
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_with"
+            app:typeface="Montserrat-SemiBold.ttf"
+            android:textSize="@dimen/button_text"
+            android:gravity="center"
+            android:textColor="@color/light_black"
+            />
+
+        <ImageButton
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/google_icon"
+            android:background="@color/white"
+            android:layout_margin="16dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

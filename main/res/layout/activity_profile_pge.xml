@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePge">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_person_pin"
+            app:tint="@color/purple_500" />
+
+        <com.example.sober.textFonts
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="24sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/shadow"
+            android:elevation="5dp"
+            app:typeface="Montserrat-SemiBold.ttf"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="40dp"
+            android:textColor="@color/light_black"
+            android:gravity="start"/>
+
+        <com.example.sober.textFonts
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="24sp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            app:typeface="Montserrat-SemiBold.ttf"
+            android:background="@drawable/shadow"
+            android:elevation="5dp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="40dp"
+            android:textColor="@color/light_black"
+            android:gravity="start"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:textSize="@dimen/button_text"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="26dp"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:text="@string/logout"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/purple_500"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
